@@ -125,6 +125,10 @@ p, li {
   box-shadow: 7px 7px 9px -4px rgba(33,138,135,1);
 }
 
+.sign-up-btn:hover {
+  cursor: pointer;
+}
+
 footer {
   text-align: center;
 }
