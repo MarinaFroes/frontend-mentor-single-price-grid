@@ -1,0 +1,65 @@
+:root {
+  --main-bg-color: hsl(218, 22%, 67%);
+  --box-one-color: hsl(204, 43%, 93%);
+  --box-two-color: hsl(179, 62%, 43%);
+  --box-three-color: hsl(179, 62%, 48%);
+  --secondary-color: hsl(71, 73%, 54%);
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  font-size: 16px;
+}
+
+body {
+  background-color: var(--main-bg-color);
+  font-family: Karla sans-serif;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(3, 1fr);
+  height: 100vh;
+  grid-template-areas: 
+    "main-box"
+    "box-one"
+    "box-two";
+}
+
+.main-box {
+  border: 2px solid red;
+  grid-area: main-box;
+}
+
+.secondary-box {
+  border: 2px solid blue;
+}
+
+.secondary-box.one {
+  border: 2px solid green;
+  grid-area: box-one;
+}
+
+.secondary-box.two {
+  bordeR: 2px solid yellow;
+  grid-area: box-two;
+}
+
+.secondary-box.two li {
+  list-style-type: none;
+}
+
+.sign-up-btn {
+  background-color: var(--secondary-color);
+}
+
+.attribution { 
+  font-size: 11px; text-align: center;
+}
+
+.attribution a { 
+  color: hsl(228, 45%, 44%); 
+}
