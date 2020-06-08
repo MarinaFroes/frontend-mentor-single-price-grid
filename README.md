@@ -13,7 +13,7 @@
 - The goal of this project was to practice CSS grid by creating a responsive website following the design provided by Frontend Mentor.
 - I was provided the design, including texts, images, icons and a style guide and I had to create that design in HTML and CSS. 
 
-## How to install it
+## How to use it
 
 - Download the files and open `index.html` on the browser.
 
