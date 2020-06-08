@@ -1,6 +1,6 @@
 :root {
-  --main-bg-color: hsl(218, 22%, 67%);
-  --box-main-color: hsl(204, 43%, 93%);
+  --main-bg-color: hsl(204, 43%, 93%);
+  --box-main-color: hsl(0, 0%, 100%);
   --box-one-color: hsl(179, 62%, 43%);
   --box-two-color: hsl(179, 62%, 48%);
   --secondary-color: hsl(71, 73%, 54%);
@@ -28,7 +28,8 @@ body {
 }
 
 .boxes-container {
-  margin: 0 1rem;
+  margin: 3rem 1rem;
+  border-radius: 5px;
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: repeat(3, 1fr);
@@ -139,10 +140,28 @@ footer {
 
 .icon {
   text-decoration: none;
-  color: hsl(204, 43%, 93%);
+  color: hsl(218, 22%, 67%);
   padding: 1rem;
 }
 
 .icon:hover {
   color: black;
+}
+
+@media only screen and (min-width: 700px){
+  .boxes-container {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: 
+      "main-box main-box"
+      "box-one box-two";
+  }
+
+  .secondary-box.one {
+    border-radius: 0 0 0 5px;
+  }
+
+  .secondary-box.two {
+    border-radius: 0 0 5px 0;
+  }
 }
